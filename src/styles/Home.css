@@ -1,0 +1,59 @@
+ .home {
+  width: 100%;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+}
+
+.portada {
+  width: 100%;
+  margin-top: 6rem;  
+  height: calc(100vh - 6rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background-image: url("../assets/portada.jpg");
+  background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  color: #f0f0f0;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 11, 186, 0.5);
+}
+
+.portada h1 {
+  z-index: 100;
+  margin: 0 0.5rem;
+  font-size: 80px;
+  color: #fafafa;
+  height: 50px;
+  margin: 1rem;
+  padding: 0.3rem;
+}
+
+.portada p {
+  width: 100%;
+  z-index: 100;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .portada h1 {
+    font-size: 32px;
+  }
+
+  .portada p {
+    font-size: 24px;
+    color: #fafafa;
+   margin-left:.3rem; 
+   margin-right: .3rem;
+  }
+}
