@@ -31,7 +31,7 @@ const ContactForm = () => {
   });
 
   // Cargar reCAPTCHA v3
-  /* useEffect(() => {
+  useEffect(() => {
     let script;
 
     if (!window.grecaptcha) {
@@ -61,7 +61,7 @@ const ContactForm = () => {
         document.body.removeChild(script);
       }
     };
-  }, []); */
+  }, []);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -258,15 +258,14 @@ const ContactForm = () => {
             <FormControlLabel value="email" control={<Radio />} label="Email" />
           </RadioGroup>
         </FormControl>
-
-       {/*  {!recaptchaLoaded && (
+        {!recaptchaLoaded && (
           <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
             <CircularProgress size={20} />
             <Typography variant="body2" color="text.secondary">
               Cargando sistema de verificación...
             </Typography>
           </Box>
-        )} */}
+        )}
 
         {submitError && <Alerta mensaje={submitError} color="error"></Alerta>}
 
