@@ -13,7 +13,7 @@ const  Tratamientos =(props) => {
         <Typography variant='h2'sx={{fontSize:'2rem', margin:'1rem 0'}}>Nuestros Tratamientos</Typography>
         <div id='grilla'>
     {tratamientosList.map((tratamiento)=>{
-        return <TratamientoItem  key={tratamiento.id} id={tratamiento.id} name={tratamiento.name} icon={tratamiento.icon} details={tratamiento.details} />
+        return <TratamientoItem  key={tratamiento.id} id={tratamiento.id} name={tratamiento.name} ruta={tratamiento.ruta} icon={tratamiento.icon} details={tratamiento.details} />
 
     })}
     </div>

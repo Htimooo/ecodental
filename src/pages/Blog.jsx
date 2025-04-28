@@ -100,7 +100,7 @@ const Blog = () => {
                 <Typography variant="body1" color="initial">
                  {blog.estracto}
                 </Typography>
-                <Button onClick={()=>{ navigate('/blog/'+blog.id)}} sx={{marginTop:'1rem', color:'#45c07d', borderColor:'#45c07d'}} variant="outlined"> Leer más</Button>
+                <Button onClick={()=>{ navigate('/blog/'+blog.ruta)}} sx={{marginTop:'1rem', color:'#45c07d', borderColor:'#45c07d'}} variant="outlined"> Leer más</Button>
               </div>
             </div>
           );

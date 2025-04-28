@@ -75,6 +75,7 @@ function Blog(props) {
           <Slider {...settings}>
             {blogList.map((blog, idx) => (
               <BlogItem
+              key={blog.id}
                 id={idx}
                 blog={blog}
               />

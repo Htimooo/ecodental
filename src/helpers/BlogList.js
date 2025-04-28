@@ -2,6 +2,7 @@ export const blogList = [
   {
     id: 1,
     title: "Prótesis Dentales: Todo lo que Necesitas Saber para una Sonrisa Perfecta",
+    ruta:'protesis-dentales',
     contenido: [
       {
         subtitulo: "¿Qué son las Prótesis Dentales?",
@@ -56,6 +57,7 @@ export const blogList = [
   {
     id: 2,
     title: "Caries Dentales: Causas, Prevención y Tratamientos",
+    ruta:'caries',
     contenido: [
       {
         subtitulo: "¿Qué es la Caries Dental?",
@@ -96,6 +98,7 @@ export const blogList = [
   {
     id: 3,
     title: "Implantes Dentales: Procedimiento y Costo",
+    ruta:'implantes-dentales',
     contenido: [
       {
         subtitulo: "¿Qué Son los Implantes Dentales?",
@@ -147,6 +150,7 @@ export const blogList = [
   {
     id: 4,
     title: "Ortodoncia: Beneficios y Tipos de Aparatos",
+    ruta:'ortodoncia',
     contenido: [
       {
         subtitulo: "¿Qué es la Ortodoncia?",
@@ -198,6 +202,7 @@ export const blogList = [
   {
     id: 5,
     title: "Blanqueamiento Dental: Métodos y Resultados",
+    ruta:'blanqueamiento-dental',
     contenido: [
       {
         subtitulo: "¿Qué es el Blanqueamiento Dental?",
@@ -242,6 +247,7 @@ export const blogList = [
   {
     id: 6,
     title: "Enfermedades Periodontales: Causas, Síntomas y Tratamientos",
+    ruta:'enfermedades-periodentales',
     contenido: [
       {
         subtitulo: "¿Qué Son las Enfermedades Periodontales?",
@@ -292,6 +298,7 @@ export const blogList = [
   {
     id:7,
     title: "Odontología Estética: Procedimientos y Beneficios",
+    ruta:'odontologia-estetica',
     contenido: [
       {
         subtitulo: "¿Qué es la Odontología Estética?",
@@ -336,7 +343,8 @@ export const blogList = [
   },
   {
     id: 8,
-    title: "Tratamientos de Conducto: Qué Esperar",
+    title: "Tratamientos de Conducto: ¿Qué Esperar?",
+    ruta:'tratamiento-conducto',
     contenido: [
       {
         subtitulo: "¿Qué es un Tratamiento de Conducto?",
@@ -379,7 +387,8 @@ export const blogList = [
   },
   {
     id: 9,
-    title: "Odontología Infantil: Cuidado y Tratamientos para los Más Pequeños",
+    title: "Odontología Infantil: Cuidado y Tratamientos para los Más Pequeños", 
+    ruta:'odontologia-infantil',
     contenido: [
       {
         subtitulo: "¿Qué es la Odontología Infantil?",
@@ -424,6 +433,7 @@ export const blogList = [
   {
     id: 10,
     title: "Tecnología Digital en Odontología: Avances y Beneficios",
+    ruta:'tecnologia-digital-ortodoncia',
     contenido: [
       {
         subtitulo: "Introducción a la Tecnología Digital en Odontología",

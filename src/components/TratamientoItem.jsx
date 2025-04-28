@@ -7,7 +7,7 @@ import {useNavigate} from 'react-router-dom';
 
 const TratamientoItem = (props) => {
   const navigate = useNavigate();
-  const { name, details, icon,id } = props;
+  const { name, details, icon,id, ruta } = props;
   return (
     <Paper   
       sx={{
@@ -22,8 +22,9 @@ const TratamientoItem = (props) => {
        width: !isMobile ? '172px': '96%', 
        /*  margin: '0 auto'  */
       }}
+      onClick={()=>{ navigate('/tratamiento/'+ruta)}}
     >
-     <div onClick={()=>{ navigate('/tratamiento/'+id)}} style={{display: 'flex', alignItems: 'center', justifyContent:'center',width:'75px', height:'75px',margin: '.5rem auto',borderRadius:'50%',boxShadow: "0 15px 35px rgba(8, 160, 105, 0.2)" }}>
+     <div  style={{display: 'flex', alignItems: 'center', justifyContent:'center',width:'75px', height:'75px',margin: '.5rem auto',borderRadius:'50%',boxShadow: "0 15px 35px rgba(8, 160, 105, 0.2)" }}>
       <img style={{width:'40px'}} src= {icon} alt={name} />
       </div>
       <Typography sx={{fontWeight:700}} variant="h6">{name}</Typography>   

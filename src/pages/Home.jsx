@@ -5,7 +5,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Tratamiento from "../components/Tratamientos";
 import Perfil from "../components/Perfil";
 import AntesDespues from "../components/AntesDespues";
-import WsButton from "../components/WsButton";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 import Blog from "../components/Blog";
 import PhoneIphoneOutlinedIcon from "@mui/icons-material/PhoneIphoneOutlined";
@@ -19,14 +19,26 @@ function Home(props) {
     <div className="home">
       <div className="portada">
         <div className="overlay" />
-        <h1> Clínica odontológica</h1>
 
-        <p>Excelencia en tratamientos odontológicos para niños y adultos</p>
+        <Box sx={{ zIndex: 100, maxWidth:'96%', margin: '0 auto', marginTop:'8rem' }}>
+          <h1
+            style={{
+              fontSize: isMobile ? "32px" : "80px",
+              margin: " 0 0.5rem",
+            }}
+          >
+            {" "}
+            Clínica odontológica
+          </h1>
 
-        <WsButton footer={footer} />
+          <p style={{ fontSize: isMobile ? "20px" : "30px", margin:'0rem auto' }}>
+            Profesionalismo en tratamientos odontológicos para niños y adultos
+          </p>
+        </Box>
+       
 
         {isMobile ? (
-          <Box sx={{ position: "absolute", bottom: "3rem", zIndex: 100 }}>
+          <Box sx={{ position: "absolute", bottom: "6rem", zIndex: 100 }}>
             <Box
               sx={{
                 border: "solid 3px white",

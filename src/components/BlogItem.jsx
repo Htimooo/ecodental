@@ -29,7 +29,7 @@ const BlogItem = (props) => {
         </CardContent>
         <CardActions>
           {/* <Button size="small">Compartir</Button> */}
-          <Button variant="contained" onClick={()=>{ navigate('/blog/'+blog.id)}} sx={{backgroundColor:'#45c07d'}} size="small">Ver</Button>
+          <Button variant="contained" onClick={()=>{ navigate('/blog/'+blog.ruta)}} sx={{backgroundColor:'#45c07d'}} size="small">Ver</Button>
         </CardActions>
       </Card>
     </>

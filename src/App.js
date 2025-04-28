@@ -10,6 +10,9 @@ import Footer from "./components/Footer";
 import Tratamiento from "./pages/Tratamiento";
 import Articulo from "./pages/Articulo";
 import ScrollToTop from "./components/ScrollToTop";
+import WhatsAppButton from "./components/WhatsAppButton";
+import ContactForm from "./components/ContactForm";
+import NotFound from "./pages/NotFound";
 
 
 
@@ -19,16 +22,19 @@ function App() {
     <div className="App">
       <Router>
       <ScrollToTop />
+      <WhatsAppButton />
         <Navbar />     
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path= '/blog/:id' element={<Articulo/>}/>
+          <Route path= '/blog/:ruta' element={<Articulo/>}/>
           <Route path= '/blog' element={<Blog/>}/>
-          <Route path= '/tratamiento/:id' element={<Tratamiento/>}/>
+          <Route path= '/tratamiento/:ruta' element={<Tratamiento/>}/>
           <Route path= '/financiamiento' element={<Financiamiento/>}/>
           <Route path= '/contacto' element={<Contacto/>}/>
           <Route path= '/perfil' element={<Perfil/>}/>
+          <Route path="*" element={<NotFound />} />
         </Routes>
+        <ContactForm/>
         <Footer />
       </Router>      
     </div>

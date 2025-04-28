@@ -45,10 +45,11 @@ const Mapa = (props) => {
         <Grid item xs={isMobile ? 12 : 6}>
           <div
             style={{
-              width: isMobile ? "auto" : "70%",
+              width:  "70%",
               margin: "0 auto",
               marginTop: isMobile ? "1.5rem" : "5rem",
               padding: ".3rem",
+            
             }}
           >
             <div
@@ -57,11 +58,11 @@ const Mapa = (props) => {
                 alignItems: "center",
                 color: "#fafafa",
                 marginBottom: "1rem",
-                justifyContent: isMobile ? "center" : "flex-start",
+                justifyContent:  "flex-start",
               }}
             >
               <PhoneIphoneOutlinedIcon />{" "}
-              <Typography ml=".5rem" variant="h5">
+              <Typography ml=".5rem" variant="body-1">
                 {" "}
                 099 401 776{" "}
               </Typography>{" "}
@@ -71,12 +72,12 @@ const Mapa = (props) => {
                 display: "flex",
                 alignItems: "center",
                 color: "#fafafa",
-                justifyContent: isMobile ? "center" : "flex-start",
+                justifyContent:  "flex-start",
                 marginBottom: "1rem",
               }}
             >
               <EmailIcon />
-              <Typography ml=".5rem" variant="h5">
+              <Typography ml=".5rem" variant="body-1">
                 {" "}
                 inesalvarezirrazabal@gmail.com
               </Typography>
@@ -86,20 +87,18 @@ const Mapa = (props) => {
                 display: "flex",
                 alignItems: "center",
                 color: "#fafafa",
-                justifyContent: isMobile ? "center" : "flex-start",
+                justifyContent:  "flex-start",
                 marginBottom: "1rem",
               }}
             >
               {" "}
               <LocationOnIcon />
-              <Typography ml=".5rem" variant="h5">
+              <Typography ml=".5rem" variant="body-1" >
                 {" "}
                 Pablo Galarza 3629 apto 205
               </Typography>
             </div>
-            <div style={{ width: isMobile ? "50%" : "50%", margin: "0 auto" }}>
-              <WsButton footer />
-            </div>
+            
           </div>
         </Grid>
       </Grid>

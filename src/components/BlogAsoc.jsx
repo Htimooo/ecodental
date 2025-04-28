@@ -42,7 +42,7 @@ export default function ImgMediaCard(props) {
         </Typography>
              </CardContent>
       <CardActions sx={{padding:0, position:'relative', bottom:0,left:0,  zIndex:3,backgroundColor:'#fafafa'}}>
-        <Button onClick={()=>{ navigate('/blog/'+blog.id)}} sx={{color:'#45c07d', borderColor:'#45c07d'}} size="small">Ver artículo de blog</Button>
+        <Button onClick={()=>{ navigate('/blog/'+blog.ruta)}} sx={{color:'#45c07d', borderColor:'#45c07d'}} size="small">Ver artículo de blog</Button>
         
       </CardActions>
    
