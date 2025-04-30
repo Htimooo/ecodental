@@ -98,8 +98,6 @@ const ContactForm = () => {
         { action: "submit" }
       );
 
-      console.log("Enviando formulario a:", process.env.REACT_APP_API_ENDPOINT);
-
       // Enviar datos al backend
       const response = await axios.post(
         process.env.REACT_APP_API_ENDPOINT,
