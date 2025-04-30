@@ -1,11 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "../styles/Home.css";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Tratamiento from "../components/Tratamientos";
 import Perfil from "../components/Perfil";
 import AntesDespues from "../components/AntesDespues";
-import WhatsAppButton from "../components/WhatsAppButton";
+
 
 import Blog from "../components/Blog";
 import PhoneIphoneOutlinedIcon from "@mui/icons-material/PhoneIphoneOutlined";
@@ -14,7 +13,7 @@ import { Box, Typography } from "@mui/material";
 import { isMobile } from "react-device-detect";
 
 function Home(props) {
-  const footer = false;
+ 
   return (
     <div className="home">
       <div className="portada">

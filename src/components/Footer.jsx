@@ -9,7 +9,7 @@ function Footer(props) {
 
   return (
     <div>
-      <div style={{ width: "100%", backgroundColor: "#45c07d" }}>
+      <div style={{ width: "100%", backgroundColor: "#45c07d", padding:'1rem 0' }}>
         <Typography
           variant="h5"
           sx={{ color: "#fafafa", margin: "1.5rem", marginTop: "1rem" }}

@@ -94,7 +94,7 @@ function Tratamiento(props) {
 
         <div
           style={{
-            width: isMobile ? "96%" : "75%",
+            width: isMobile ? "96%" : "60%",
             padding: ".3rem",
             margin: !isMobile ? "2.5rem auto" : "1.5rem auto",
           }}
@@ -113,6 +113,7 @@ function Tratamiento(props) {
             ))}
           </Typography>
         </div>
+        
       </div>
       <div
         style={{
