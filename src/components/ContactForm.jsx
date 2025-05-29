@@ -285,6 +285,7 @@ const ContactForm = () => {
             padding: "0.8rem 2rem",
             mt: 3,
             width: "auto",
+            backgroundColor: "#45c07d"
           }}
           startIcon={isSubmitting ? <CircularProgress size={24} /> : null}
         >

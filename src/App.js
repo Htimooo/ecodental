@@ -8,6 +8,7 @@ import Perfil from "./pages/Perfil";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Tratamiento from "./pages/Tratamiento";
+import LandingOrtodoncia from "./pages/LandingOrtodoncia"
 import Articulo from "./pages/Articulo";
 import ScrollToTop from "./components/ScrollToTop";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -26,6 +27,7 @@ function App() {
         <Navbar />     
         <Routes>
           <Route path="/" element={<Home />} />
+           <Route path= '/ortodoncia' element={<LandingOrtodoncia/>}/>
           <Route path= '/blog/:ruta' element={<Articulo/>}/>
           <Route path= '/blog' element={<Blog/>}/>
           <Route path= '/tratamiento/:ruta' element={<Tratamiento/>}/>
