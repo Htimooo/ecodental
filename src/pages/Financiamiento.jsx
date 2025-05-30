@@ -5,11 +5,12 @@ import { isMobile } from "react-device-detect";
 import cash from "../assets/cash.png";
 import transferencia from "../assets/transferencia.png";
 import mercadopago from "../assets/mercadopago.png";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 const Financiamiento = (props) => {
   return (
     <div style={{ height: !isMobile ? "calc(100vh - 12rem)": "calc(100% - 3rem)", marginTop: "6rem" }}>
-      {" "}
+      {" "}<WhatsAppButton />
       <div style={{margin:'2rem'}}>
       <Typography variant="h3" sx={{ margin: "1rem", fontSize: isMobile ? '2rem':'3rem' }}>
         Financiamiento a tu medida

@@ -1,12 +1,12 @@
 import React from "react";
 import { Button, Grid, Typography, Box } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import jovenOrtodoncia from "../assets/niña-ortodoncia.jpg";
+import jovenOrtopedia from "../assets/ortopediaDental.jpg";
 import isotipo from "../assets/isoTipo.png";
 import { isMobile } from "react-device-detect";
 import CheckIcon from "@mui/icons-material/Check";
 
-const LandingOrtodoncia = () => {
+const LandingOrtopedia = () => {
   return (
     <Box
       sx={{
@@ -27,14 +27,14 @@ const LandingOrtodoncia = () => {
               fontWeight: 700,
             }}
           >
-            Ortodoncia
+            Ortopedia
           </Typography>
           <Typography
             variant="h6"
             sx={{ color: "#fafafa" }}
             textTransform="uppercase"
           >
-            Tratamientos con brackets y alineadores invisibles
+            Tratamientos con aparatos removibles
           </Typography>
         </Box>
       </Box>
@@ -51,7 +51,7 @@ const LandingOrtodoncia = () => {
         <Grid item xs={12} md={6} py={!isMobile ? "2rem" : ".6rem"}>
           <div
             style={{
-              backgroundImage: `url(${jovenOrtodoncia})`,
+              backgroundImage: `url(${jovenOrtopedia})`,
               width: isMobile ? "96%" : "70%",
               height: "600px",
               margin: "0 auto",
@@ -60,74 +60,65 @@ const LandingOrtodoncia = () => {
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
               position: "relative",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "flex-end",
+              display:'flex',
+              flexDirection:'column',
+              justifyContent:'flex-end',
+               
             }}
           >
             {/* Overlay */}
-            <div
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                backgroundColor: "rgba(0, 0, 0, 0.5)", // Overlay oscuro
-                zIndex: 10,
-              }}
-            ></div>
-
+                <div
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    backgroundColor: "rgba(0, 0, 0, 0.5)", // Overlay oscuro
+                    zIndex: 10,
+                  }}
+                ></div>
+            
             {isMobile && (
-              <>
-                <a
-                  href="https://wa.me/59899401776?text=Quiero%20agendar%20una%20consulta"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  id="btn-whatsapp-ortodoncia"
-                >
-                  <Button
-                    variant="contained"
-                    color="success"
-                    size="large"
-                    startIcon={<WhatsAppIcon />}
-                    sx={{
-                      textTransform: "none",
-                      fontWeight: "bold",
-                      width: "calc(100% - 1rem) ",
-                      zIndex: 20,
-                    }}
-                  >
-                    Agenda por WhatsApp
-                  </Button>
-                </a>
-                <Typography
-                  textTransform={"uppercase"}
-                  variant="body-1"
+                <>
+              <a
+                href="https://wa.me/59899401776?text=Quiero%20agendar%20una%20consulta"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="btn-whatsapp-ortopedia"
+              >
+                <Button
+                  variant="contained"
+                  color="success"
+                  size="large"
+                  startIcon={<WhatsAppIcon />}
                   sx={{
-                    color: "#fafafa",
-                    zIndex: 25,
-                    fontWeight: 700,
-                    width: "96%",
-                    margin: "1rem auto",
+                    textTransform: "none",
+                    fontWeight: "bold",
+                    width: "calc(100% - 1rem) ",
+                    zIndex: 20,
                   }}
                 >
-                  {" "}
-                  También puedes llenar el formulario de contacto y nos
-                  comunicaremos a la brevedad
-                </Typography>
+                  Agenda por WhatsApp
+                </Button>
+              </a>
+              <Typography textTransform={'uppercase'} variant="body-1" sx={{ color: "#fafafa", zIndex: 25, fontWeight:700, width:'96%', margin: '1rem auto'}}>
+                {" "}
+                También puedes llenar el formulario de contacto y nos comunicaremos a la brevedad
+              </Typography>
               </>
-            )}
-          </div>
+              )}
+            </div>
+   
         </Grid>
-
         <Grid item xs={12} md={6} py="2rem">
           <Box pb="1.5rem" sx={{ width: "85%", margin: "0 auto" }}>
             {[
+              "Guía el crecimiento maxilares",
               "Mejora la mordida",
-              "Corrije dientes torcidos",
-              "Favorece el crecimiento oseo",
-              "Fomenta habitos saludables",
+              "Corrige hábitos perjudiciales",
+              "Aparatos removibles",
+              "Mejora la estética facial",
             ].map((item, index) => (
               <Box
                 key={index}
@@ -154,7 +145,7 @@ const LandingOrtodoncia = () => {
                 href="https://wa.me/59899401776?text=Quiero%20agendar%20una%20consulta"
                 target="_blank"
                 rel="noopener noreferrer"
-                id="btn-whatsapp-ortodoncia"
+                id="btn-whatsapp-ortopedia"
               >
                 <Button
                   variant="contained"
@@ -206,4 +197,4 @@ const LandingOrtodoncia = () => {
   );
 };
 
-export default LandingOrtodoncia;
+export default LandingOrtopedia;

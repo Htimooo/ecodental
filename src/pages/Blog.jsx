@@ -3,7 +3,8 @@ import { isMobile } from "react-device-detect";
 import { Typography, Button, Box } from "@mui/material";
 import { blogList } from "../helpers/BlogList";
 import image from "../assets/dent18.jpeg";
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 const Blog = () => {
   const navigate = useNavigate();
@@ -15,6 +16,7 @@ const Blog = () => {
         height: "100%",
       }}
     >
+      <WhatsAppButton />
       <div
         style={{
           height: !isMobile ? "10rem" : "7rem",
@@ -22,14 +24,17 @@ const Blog = () => {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          margin:'1.5rem auto'
+          margin: "1.5rem auto",
         }}
       >
         {" "}
         <Typography variant="h1" sx={{ fontSize: !isMobile ? "3rem" : "2rem" }}>
           Blog odontológico
         </Typography>{" "}
-        <Typography variant="h6"sx={{ fontSize: !isMobile ? "2rem" : "1.2rem" }}>
+        <Typography
+          variant="h6"
+          sx={{ fontSize: !isMobile ? "2rem" : "1.2rem" }}
+        >
           Información y consejos para tu salud dental
         </Typography>
       </div>
@@ -38,7 +43,6 @@ const Blog = () => {
           width: isMobile ? "90%" : "60%",
           margin: "0 auto",
           height: "100%",
-        
         }}
       >
         {blogList.map((blog) => {
@@ -48,9 +52,9 @@ const Blog = () => {
                 /*  height: !isMobile ? "10rem" : "7rem", */
                 display: "flex",
                 flexDirection: isMobile ? "column" : "row",
-                alignItems:  isMobile ? "flex-start":"center",
+                alignItems: isMobile ? "flex-start" : "center",
                 justifyContent: "space-between",
-                marginBottom:'2rem'
+                marginBottom: "2rem",
               }}
             >
               <div
@@ -59,12 +63,11 @@ const Blog = () => {
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
-                  width: isMobile ? '40%':"75%",
-                  height: isMobile ? "7rem":"15rem",
+                  width: isMobile ? "40%" : "75%",
+                  height: isMobile ? "7rem" : "15rem",
                   borderRadius: "4px",
                   boxShadow: "0 15px 35px rgba(8, 160, 105, 0.2)",
-                  position:"relative",
-                 
+                  position: "relative",
                 }}
               >
                 {/* Overlay */}
@@ -85,7 +88,7 @@ const Blog = () => {
                 style={{
                   backgroundColor: "#fafafa",
                   padding: "1rem",
-                  width: isMobile ? '80%':"75%",
+                  width: isMobile ? "80%" : "75%",
                   height: "auto",
                   zIndex: 200,
                   marginLeft: isMobile ? "2rem" : "-8rem",
@@ -98,9 +101,22 @@ const Blog = () => {
                   {blog.title}
                 </Typography>
                 <Typography variant="body1" color="initial">
-                 {blog.estracto}
+                  {blog.estracto}
                 </Typography>
-                <Button onClick={()=>{ navigate('/blog/'+blog.ruta)}} sx={{marginTop:'1rem', color:'#45c07d', borderColor:'#45c07d'}} variant="outlined"> Leer más</Button>
+                <Button
+                  onClick={() => {
+                    navigate("/blog/" + blog.ruta);
+                  }}
+                  sx={{
+                    marginTop: "1rem",
+                    color: "#45c07d",
+                    borderColor: "#45c07d",
+                  }}
+                  variant="outlined"
+                >
+                  {" "}
+                  Leer más
+                </Button>
               </div>
             </div>
           );

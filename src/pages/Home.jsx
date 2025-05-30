@@ -4,18 +4,18 @@ import "../styles/Home.css";
 import Tratamiento from "../components/Tratamientos";
 import Perfil from "../components/Perfil";
 import AntesDespues from "../components/AntesDespues";
-
-
 import Blog from "../components/Blog";
 import PhoneIphoneOutlinedIcon from "@mui/icons-material/PhoneIphoneOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import { Box, Typography } from "@mui/material";
 import { isMobile } from "react-device-detect";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 function Home(props) {
  
   return (
     <div className="home">
+       <WhatsAppButton />
       <div className="portada">
         <div className="overlay" />
 

@@ -7,6 +7,7 @@ import { blogList } from "../helpers/BlogList";
 import { tratamientosList } from "../helpers/TratamientosList";
 import { isMobile } from "react-device-detect";
 import BlogAsoc from "../components/BlogAsoc";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 function Tratamiento(props) {
   const { ruta } = useParams();
@@ -15,6 +16,7 @@ function Tratamiento(props) {
   if (!tratamiento) {
     return (
       <div style={{ marginTop: "6rem", textAlign: "center" }}>
+         
         <Typography variant="h5" color="error">
           Tratamiento no encontrado
         </Typography>
@@ -30,6 +32,7 @@ function Tratamiento(props) {
         maxWidth: "100%",
       }}
     >
+      <WhatsAppButton />
       <div>
         <div style={{ backgroundColor: "#45c07d", width: "100%" }}>
           <div
